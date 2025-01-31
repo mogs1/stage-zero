@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #234577;
+    margin: 0;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #007bef, #00d4ff);
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid aliceblue;
+}
+
+/* Name & Job Title */
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.job-title {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* Bio */
+.bio {
+    font-size: 0.9rem;
+    margin: 15px 0;
+    opacity: 0.85;
+}
+
+/* Dropdown Buttons */
+.dropdown {
+    margin: 10px 0;
+}
+
+.dropdown-btn {
+    background: aliceblue;
+    color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    visibility: hidden;
+    opacity: 0%;
+    background: aliceblue;
+    color: #007bff;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Social Links */
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* UTC Time */
+.utc-time {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-weight: bold;
+}

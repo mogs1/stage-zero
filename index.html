@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="./resources/image/copyb.jpg" alt="Profile Picture" class="profile-img" data-testid="profilePicture">
+
+        <h2 class="name" data-testid="fullName">Mogbo Akeredolu</h2>
+        <p class="job-title" data-testid="jobTitle">Frontend Developer & Aspiring Full-Stack Engineer</p>
+
+        <p class="bio" data-testid="shortBio">
+            I am a passionate Frontend Developer with four years of experience in web development.
+            Skilled in HTML, CSS, Sass, TailwindCSS, React, and Next.js. I love crafting user-friendly
+            and visually appealing web applications. Currently aspiring to be a full-stack engineer
+            by expanding my expertise in backend technologies. Enthusiastic about creating 
+            seamless digital experiences. I'm currently participating in the HNG Internship 12.0.
+        </p>
+
+        <div class="dropdown">
+            <button class="dropdown-btn">📍 Location</button>
+            <div class="dropdown-content" data-testid="currentLocation">
+                Lagos, Nigeria
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-btn">📧 Email</button>
+            <div class="dropdown-content" data-testid="emailAddress">
+                mogbo.akeredolu@example.com
+            </div>
+        </div>
+
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://github.com/mogs1" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/mogbo-akeredolu-523269282" target="_blank">LinkedIn</a>
+            <a href="https://x.com/AkeredoluMogbo" target="_blank">Twitter</a>
+        </div>
+
+        <p class="utc-time" data-testid="currentTimeUTC">UTC Time: <span id="utc-time"></span></p>
+    </div>
+</body>
+</html>
